@@ -4,7 +4,8 @@
 fs = require 'fs'
 
 # Use first CoffeeScript file
-src    = ( file.replace /\.coffee$/, '' for file in fs.readdirSync('.') when file.match(/coffee$/) )[0]
+csRegex = /\.coffee$/
+src    = ( file.replace csRegex, '' for file in fs.readdirSync('.') when file.match csRegex )[0]
 date   = new Date().toDateString()
 banner = """
 /*!
