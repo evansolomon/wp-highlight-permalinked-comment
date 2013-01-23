@@ -3,7 +3,8 @@
 { exec, spawn } = require 'child_process'
 fs = require 'fs'
 
-src    = 'highlight-permalinked-comment'
+# Use first CoffeeScript file
+src    = ( file.replace /\.coffee$/, '' for file in fs.readdirSync('.') when file.match(/coffee$/) ).pop()
 date   = new Date().toDateString()
 banner = """
 /*!
