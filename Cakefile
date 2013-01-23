@@ -9,7 +9,7 @@ date   = new Date().toDateString()
 banner = """
 /*!
 * Highlight Permalinked Comment
-* Copyright (c) 2012 Evan Solomon #{date}
+* Copyright (c) Evan Solomon #{date}
 * Licensed GPL
 */
 """
