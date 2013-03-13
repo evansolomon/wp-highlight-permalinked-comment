@@ -31,7 +31,7 @@ Author URI: http://evansolomon.me
  */
 
 function highlight_permalinked_comment() {
-	if ( apply_filters( 'highlight_permalinked_comment', ! is_single() ) )
+	if ( apply_filters( 'disable_highlight_permalinked_comment', ! is_single() ) )
 		return;
 
 	$ext = ( ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : 'min.' ) . 'js';
