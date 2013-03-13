@@ -30,11 +30,11 @@ Author URI: http://evansolomon.me
  * **********************************************************************
  */
 
-function highlight_permalinked_comment() {
+function es_highlight_permalinked_comment() {
 	if ( apply_filters( 'disable_highlight_permalinked_comment', ! is_single() ) )
 		return;
 
 	$ext = ( ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : 'min.' ) . 'js';
 	wp_enqueue_script( 'highlight-permalinked-comment', plugins_url( "/highlight-permalinked-comment.{$ext}", __FILE__ ), array( 'jquery', 'jquery-color' ), '1.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'highlight_permalinked_comment' );
+add_action( 'wp_enqueue_scripts', 'es_highlight_permalinked_comment' );
