@@ -3,7 +3,7 @@ Contributors: evansolomon
 Tags: comment, permalink
 Requires at least: 3.4
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.01
 
 Briefly fade a highlighted background on comments when their permalink is visited.
 

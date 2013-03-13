@@ -3,7 +3,7 @@
 /*
 Plugin Name: Highlight Permalinked Comment
 Description: Briefly fade a highlighted background on comments when their permalink is visited.
-Version: 1.0
+Version: 1.01
 Author: Evan Solomon
 Author URI: http://evansolomon.me
 */
